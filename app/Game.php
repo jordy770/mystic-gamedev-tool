@@ -12,6 +12,7 @@ class Game extends Model
         'company_id'
     ];
     public function features(){
-        return $this->hasMany('App\Feature');
+        return $this->hasMany(Feature::class);
     }
+    //TODO continue where I left https://youtu.be/3Oxfi3DLdkI?t=86
 }

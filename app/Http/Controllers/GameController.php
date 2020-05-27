@@ -64,9 +64,8 @@ class GameController extends Controller
     public function show($id)
     {
         $game = Game::find($id);
-        $feature = Feature::all();
 
-        return view('games.show')->with('game', $game, $feature);
+        return view('games.show')->with('game', $game);
     }
 
     /**
