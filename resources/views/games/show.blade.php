@@ -7,12 +7,14 @@
             <h3><strong>Naam:</strong> {{$game->title}}</h3>
             <h5><strong>Description:</strong> {{$game->description}}</h5>
         </div>
+        {{--
         @foreach($features as feature)
         <div class="display-comment">
         <strong>{{ $feature->name }}</strong>
         <p>{{ $feature->d }}</p>        
     </div>
         @endforeach
+        --}}
     </div>
 </div>
 @endsection
