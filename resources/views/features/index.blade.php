@@ -1,8 +1,8 @@
-@extends('base')
+@extends('layouts.app')
 
-@section('main')
+@section('content')
 <div>
-    <a style="margin: 19px;" href="{{ route('features.create')}}" class="btn btn-primary">New feature</a>
+    <a style="margin: 25px;" href="{{ route('features.create')}}" class="btn btn-primary">New feature</a>
 </div>
 <div class="col-sm-12">
     @if(session()->get('success'))
