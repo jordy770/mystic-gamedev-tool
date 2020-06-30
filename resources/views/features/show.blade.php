@@ -13,6 +13,7 @@
                         {{ $feature->description }}
                     </p>
                     <hr />
+                    @if(Auth::user())
                     <h4>Display Comments</h4>
 
                     @include('features.commentsDisplay', ['comments' => $feature->comments, 'feature_id' => $feature->id])
@@ -29,6 +30,10 @@
                             <input type="submit" class="btn btn-success" value="Add Comment" />
                         </div>
                     </form>
+
+                    @else
+                    Login to view or add comments
+                    @endif
                 </div>
             </div>
         </div>
