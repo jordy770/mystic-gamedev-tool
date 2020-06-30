@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="dashboard">
+<div class="dashboard py-4">
     <img id="bg" src="{{ asset('images/unknown.png')}}">
     <div class="container-fluid">
         <h1 class="dashboard__title">Mystic Gamedev Tool</h1>
@@ -10,25 +10,36 @@
             <div class="col">
                 <h2> Companies</h2>
                 <div class="row row-cols-1 row-cols-md-2 dashboard-companies">
-                    <div class="col md-4">
-                        <img src="{{ asset('images/gamezo.png')}}" alt="test" class="rounded">
-                    </div>
-                    <div class="col md-4">
-                        <img src="{{ asset('images/gameraider.png')}}" alt="test" class="rounded">
-                    </div>
-                    <div class="col md-4">
-                        <img src="{{ asset('images/gameric.png')}}" alt="test" class="rounded">
-                    </div>
-                    <div class="col md-4">
-                        <img src="{{ asset('images/gameland.png')}}" alt="test" class="rounded">
-                    </div>
-                    <div class="col md-4">
-                        <img src="{{ asset('images/gamingly.png')}}" alt="test" class="rounded">
-                    </div>
-                    <div class="col md-4">
-                        <img src="{{ asset('images/gamegenix.png')}}" alt="test" class="rounded">
-                    </div>
-
+                    <a href="{{ route('features.index')}}">
+                        <div class="col md-4">
+                            <img src="{{ asset('images/gamezo.png')}}" alt="test" class="rounded">
+                        </div>
+                    </a>
+                    <a href="{{ route('features.index')}}">
+                        <div class="col md-4">
+                            <img src="{{ asset('images/gameraider.png')}}" alt="test" class="rounded">
+                        </div>
+                    </a>
+                    <a href="{{ route('features.index')}}">
+                        <div class="col md-4">
+                            <img src="{{ asset('images/gameric.png')}}" alt="test" class="rounded">
+                        </div>
+                    </a>
+                    <a href="{{ route('features.index')}}">
+                        <div class="col md-4">
+                            <img src="{{ asset('images/gameland.png')}}" alt="test" class="rounded">
+                        </div>
+                    </a>
+                    <a href="{{ route('features.index')}}">
+                        <div class="col md-4">
+                            <img src="{{ asset('images/gamingly.png')}}" alt="test" class="rounded">
+                        </div>
+                    </a>
+                    <a href="{{ route('features.index')}}">
+                        <div class="col md-4">
+                            <img src="{{ asset('images/gamegenix.png')}}" alt="test" class="rounded">
+                        </div>
+                    </a>
                 </div>
             </div>
             <div class="col highlights">

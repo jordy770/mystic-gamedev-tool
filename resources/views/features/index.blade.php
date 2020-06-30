@@ -1,8 +1,17 @@
 @extends('layouts.app')
 
 @section('content')
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb  bg-dark">
+      <li class="breadcrumb-item "><a href="{{ url('/') }}">Home</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Features</li>
+    </ol>
+  </nav>
+<div class="dashboard">
+    <img id="bg" src="{{ asset('images/unknown.png')}}">
+    <div class="container-fluid">
 <div>
-    <a style="margin: 25px;" href="{{ route('features.create')}}" class="btn btn-primary">New feature</a>
+    {{-- <a style="margin: 25px;" href="{{ route('features.create')}}" class="btn btn-primary">New feature</a> --}}
 </div>
 <div class="col-sm-12">
     @if(session()->get('success'))
@@ -13,7 +22,7 @@
 </div>
 <div class="row">
     <div class="col-sm-12">
-        <h1 class="display-3">Features</h1>
+        <h1 class="display-3" style="color: white;">Features</h1>
 
 
         @foreach($features as $features)
@@ -28,4 +37,6 @@
 
         <div>
         </div>
+    </div>
+</div>
         @endsection
