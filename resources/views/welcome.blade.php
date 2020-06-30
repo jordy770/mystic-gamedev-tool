@@ -11,22 +11,22 @@
                 <h2> Companies</h2>
                 <div class="row row-cols-1 row-cols-md-2 dashboard-companies">
                     <div class="col md-4">
-                        <img src="{{ asset('images/group16.png')}}" alt="test" class="rounded">
+                        <img src="{{ asset('images/gamezo.png')}}" alt="test" class="rounded">
                     </div>
                     <div class="col md-4">
-                        <img src="{{ asset('images/group19.png')}}" alt="test" class="rounded">
+                        <img src="{{ asset('images/gameraider.png')}}" alt="test" class="rounded">
                     </div>
                     <div class="col md-4">
-                        <img src="{{ asset('images/group24.png')}}" alt="test" class="rounded">
+                        <img src="{{ asset('images/gameric.png')}}" alt="test" class="rounded">
                     </div>
                     <div class="col md-4">
-                        <img src="{{ asset('images/group25.png')}}" alt="test" class="rounded">
+                        <img src="{{ asset('images/gameland.png')}}" alt="test" class="rounded">
                     </div>
                     <div class="col md-4">
-                        <img src="{{ asset('images/group26.png')}}" alt="test" class="rounded">
+                        <img src="{{ asset('images/gamingly.png')}}" alt="test" class="rounded">
                     </div>
                     <div class="col md-4">
-                        <img src="{{ asset('images/group27.png')}}" alt="test" class="rounded">
+                        <img src="{{ asset('images/gamegenix.png')}}" alt="test" class="rounded">
                     </div>
 
                 </div>
